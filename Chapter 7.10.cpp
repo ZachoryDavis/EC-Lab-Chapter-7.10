@@ -6,6 +6,9 @@
 //Correctly and incorrectly answered questions should be displayed along with
 //The question numbers the user got incorrect.
 
+//Input-A string of 20 letters ranging from A-D
+//Output-User should see if they passed or failed along with the number of
+//questions they got right and wrong, and which question numbers they got wrong
 
 
 #include <iostream>
@@ -14,7 +17,7 @@
 #include <string>
 
 using namespace std;
-//Inputs:
+
 //Defining test answers so they can be placed into a vector
 int A = 1;
 int B = 2;
@@ -70,8 +73,6 @@ int incorrectAnswers() {
 	cout << "Incorrect answers: " << wrong;
 }
 
-//Outputs:
-
 //*Program should display results wether user passed or failed[15-20]
 int testResults() {
 	if (j >= 15) {
@@ -91,7 +92,7 @@ void test() {
 	assert(avgTestScore(A, B, C) && testAnswers(A, B, C) ==3);
 	assert(avgTestScore(A, B, C) && testAnswers(C, B, A) == 1);
 	assert(avgTestScore() && testAnswers(A, B, C) == 0);
-	assert(avgTestScore(A, B) && testAnswers(A, B, C) == 2)
+	assert(avgTestScore(A, B) && testAnswers(A, B, C) == 2);
 
 		
 }
